@@ -5,10 +5,10 @@ async function Conexion() {
     const res = await fetch("https://www.swapi.tech/api/films");
     const data = await res.json();
     films = data.result;
-    console.log("🎬 Películas cargadas:", films.length);
+    console.log("Películas cargadas:", films.length);
     return films;
   } catch (error) {
-    console.error("❌ Error al conectar con la API:", error);
+    console.error(" Error al conectar con la API:", error);
     return [];
   }
 }
